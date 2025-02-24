@@ -56,13 +56,19 @@ class LoginPage {
     }
 
     loginWithValidUser () {
-    cy.get(this.selectorsList().signInUserName).type('UserName')
-    cy.get(this.selectorsList().signInPassword).type('12345')
-    cy.get(this.selectorsList().signInButton).click()
-    cy.get('body').should('contain', "Get Started with Real World App")
-    cy.get('body').should('contain', 'UserName')
-    cy.get("[data-test='user-onboarding-next']").click()
-    cy.get('body').should('contain', "Create Bank Account")
+        cy.get(this.selectorsList().signInUserName).type('UserName')
+        cy.get(this.selectorsList().signInPassword).type('12345')
+        cy.get(this.selectorsList().signInButton).click()
+        cy.get('body').should('contain', "Get Started with Real World App")
+        cy.get('body').should('contain', 'UserName')
+        cy.get("[data-test='user-onboarding-next']").click()
+        cy.get('body').should('contain', "Create Bank Account")
+    }
+
+    loginDataUser () {
+        cy.get(this.selectorsList().signInUserName).type('Heath93')
+        cy.get(this.selectorsList().signInPassword).type('s3cret')
+        cy.get(this.selectorsList().signInButton).click()
     }
    
 }
