@@ -76,15 +76,26 @@
       "modifiedAt": "2024-03-07T00:07:36.510Z"
     },
     {
-      "id": "ZkksT_r52",
-      "uuid": "7fb18c31-efda-4adf-a5ba-2512da252c37",
-      "firstName": "hen",
-      "lastName": "lim",
-      "username": "henri",
-      "password": "$2a$10$eghUVahMLWnhmVYXvY2IlOy6AO5KVWQwqMmnS3bSkhMEibczqRGKG",
+      "id": "T4P19aUi5",
+      "uuid": "a4811fb1-1216-4481-82ed-aab5421f7e05",
+      "firstName": "First",
+      "lastName": "Last",
+      "username": "Username",
+      "password": "$2a$10$f.Q7p4HawtVf3NceSehWPuO1NbwY664Y1xwawtZxDsqqelXAj/Jh6",
       "balance": 0,
-      "createdAt": "2025-02-24T17:37:18.962Z",
-      "modifiedAt": "2025-02-24T17:37:18.962Z"
+      "createdAt": "2025-02-25T16:50:44.464Z",
+      "modifiedAt": "2025-02-25T16:50:44.464Z"
+    },
+    {
+      "id": "3Axn0ttRW",
+      "uuid": "b4b47222-3bc8-46c6-8ca8-08b5d1088859",
+      "firstName": "First",
+      "lastName": "Last",
+      "username": "Username",
+      "password": "$2a$10$dxmAnywgMT4/mc4urbQ8rulNYcX517JQDcOuXDOQ2sORBJMHGtuIS",
+      "balance": 0,
+      "createdAt": "2025-02-25T16:53:00.746Z",
+      "modifiedAt": "2025-02-25T16:53:00.746Z"
     }
   ],
   "contacts": [
@@ -266,15 +277,15 @@
       "modifiedAt": "2024-03-07T08:44:31.174Z"
     },
     {
-      "id": "qgS-BEcDI",
-      "uuid": "a46f8837-2ceb-49ef-a7eb-a58a55b0243d",
-      "userId": "ZkksT_r52",
-      "bankName": "11111",
-      "accountNumber": "111111111",
-      "routingNumber": "111111111",
+      "id": "47eLO_Ypm",
+      "uuid": "6d2047e8-a144-48c8-b4d1-4f77cb9ed803",
+      "userId": "T4P19aUi5",
+      "bankName": "Bankc",
+      "accountNumber": "987654321",
+      "routingNumber": "123456789",
       "isDeleted": false,
-      "createdAt": "2025-02-24T17:37:44.926Z",
-      "modifiedAt": "2025-02-24T17:37:44.926Z"
+      "createdAt": "2025-02-25T16:53:14.846Z",
+      "modifiedAt": "2025-02-25T16:53:14.846Z"
     }
   ],
   "transactions": [

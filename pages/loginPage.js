@@ -17,6 +17,11 @@ class LoginPage {
         signInPassword: "[type='password']",
         signInButton: "[type='submit']",
 
+        bankName: "[name='bankName']",
+        routingNumber: "[name='routingNumber']",
+        accountNumber: "[name='accountNumber']",
+        bankAccountButton: "[data-test='bankaccount-submit']",
+        onboardNextButton: "[data-test='user-onboarding-next']",
         }
         return selectors
     }
@@ -40,7 +45,7 @@ class LoginPage {
         cy.location('pathname').should('eq', '/signup')
         cy.get(this.selectorsList().signUpFirstName).type('First')
         cy.get(this.selectorsList().signUpLastName).type('Last')
-        cy.get(this.selectorsList().signUpUserName).type('UserName')
+        cy.get(this.selectorsList().signUpUserName).type('Username')
         cy.get(this.selectorsList().signUpPassword).type('12345')
         cy.get(this.selectorsList().signUpConfirmPassword).type('12345')
         cy.get("[type='submit']").click({force: true})
@@ -56,11 +61,11 @@ class LoginPage {
     }
 
     loginWithValidUser () {
-        cy.get(this.selectorsList().signInUserName).type('UserName')
+        cy.get(this.selectorsList().signInUserName).type('Username')
         cy.get(this.selectorsList().signInPassword).type('12345')
         cy.get(this.selectorsList().signInButton).click()
         cy.get('body').should('contain', "Get Started with Real World App")
-        cy.get('body').should('contain', 'UserName')
+        cy.get('body').should('contain', 'Username')
         cy.get("[data-test='user-onboarding-next']").click()
         cy.get('body').should('contain', "Create Bank Account")
     }
@@ -69,6 +74,14 @@ class LoginPage {
         cy.get(this.selectorsList().signInUserName).type('Heath93')
         cy.get(this.selectorsList().signInPassword).type('s3cret')
         cy.get(this.selectorsList().signInButton).click()
+    }
+
+    loginWithValidUserFillData () {
+        cy.get(this.selectorsList().bankName).type('Bankc')
+        cy.get(this.selectorsList().routingNumber).type(123456789)
+        cy.get(this.selectorsList().accountNumber).type(987654321)
+        cy.get(this.selectorsList().bankAccountButton).click()
+        cy.get(this.selectorsList().onboardNextButton).click()
     }
    
 }
